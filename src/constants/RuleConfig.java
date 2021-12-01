@@ -12,6 +12,8 @@ public class RuleConfig {
 	private int NUMBER_OF_PLAYER = 1;
 	// 手牌枚数
 	private int HAND_NUM = 13;
+	// 牌番号の最大
+	private int MAX_PAI = 44;
 
 	// インストラクタはprivateにする。
 	private RuleConfig() {}
@@ -37,6 +39,14 @@ public class RuleConfig {
 	 */
 	public int handNum() {
 		return HAND_NUM;
+	}
+
+	/**
+	 * 牌番号の最大値を取得する
+	 * @return
+	 */
+	public int maxPai() {
+		return MAX_PAI;
 	}
 
 }
